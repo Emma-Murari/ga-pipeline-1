@@ -3,6 +3,7 @@
 # Wrapper Script for Trimmomatic
 #   USAGE: bash trimmomatic.bash PATH/TO/INPUT_1.fastq.gz PATH/TO/OUTPUT/DIR
 
+<<<<<<< HEAD
 #SBATCH -N 1  # number of nodes
 #SBATCH -n 1  # number of "tasks" (default: allocates 1 core per task)
 #SBATCH -t 0-00:10:00   # time in d-hh:mm:ss
@@ -47,3 +48,5 @@ $TRIM_BIN PE "${indir}/${base}_1.fastq.gz" "${indir}/${base}_2.fastq.gz" \
 
 
 
+=======
+>>>>>>> b25c01faee650fb19ca28101ec2975c2c94d8998
