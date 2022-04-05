@@ -1,5 +1,7 @@
 #Large Raw Data Files
 *.fastq.gz
+data/ref_genome/*
+data/bam/*
 
 #slurm files
 slurm.*.err
