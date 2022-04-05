@@ -1,0 +1,9 @@
+metadata=data/bam/data_files.txt
+indir=data/trimmed_fastq
+infiles=$(cut -d' ' -f 1 $metadata | grep _1.trim.fastq.gz)
+outdir=data/bam
+
+# Submit one job per input file
+for filename in $infiles; do
+  sbatch scripts/bwamem.bash $indir/$filename $outdir
+done
